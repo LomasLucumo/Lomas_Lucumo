@@ -93,7 +93,12 @@ body{
 }
 .pdf-capture-mode .card-footer{
   display:none !important;
-  
+}
+.pdf-capture-mode input[type="file"]{
+  display:none !important;
+}
+.pdf-capture-mode .firma-capura-texto{
+  display:block !important;
 }
 /*resposive*/
 @media (max-width: 576px) {
