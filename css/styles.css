@@ -1,0 +1,137 @@
+:root{
+  --azul-oscuro:#123B5E;
+  --azul-medio:#1B5A8A;
+  --azul-claro:#EAF2F8;
+  --dorado:#C79A3E;
+}
+
+body{
+  background:linear-gradient(180deg,#DCE7EF 0%,#EEF3F6 100%);
+  font-family:'Segoe UI', Arial, sans-serif;
+  margin: 0;
+}
+
+.container.fondo {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.fondo {
+  background-image: url('../img/Lomas_de_Lúcumo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.ficha-wrapper{
+  max-width:820px;
+}
+
+.ficha-card{
+  border-radius:16px;
+  overflow:hidden;
+}
+
+.ficha-header{
+  background:linear-gradient(120deg,var(--azul-oscuro),var(--azul-medio));
+  letter-spacing:1.5px;
+}
+
+.form-label.fw-semibold{
+  color:var(--azul-oscuro);
+}
+
+.tipo-entidad-group{
+  background:var(--azul-claro);
+  border-radius:8px;
+  padding:12px 16px;
+}
+
+.tolerancia-badge{
+  background:#FBF6EB;
+  color:var(--dorado);
+  border:1px solid var(--dorado);
+  font-weight:700;
+  font-size:.8rem;
+}
+
+.total-field{
+  background:var(--azul-claro) !important;
+  color:var(--azul-oscuro);
+}
+
+.firma-preview{
+  max-width:220px;
+  max-height:120px;
+  border:1px solid #ced4da;
+  border-radius:8px;
+  padding:4px;
+  background:#fff;
+  object-fit:contain;
+}
+
+.btn-primary{
+  background-color:var(--azul-oscuro);
+  border-color:var(--azul-oscuro);
+}
+.btn-primary:hover, .btn-primary:focus{
+  background-color:var(--azul-medio);
+  border-color:var(--azul-medio);
+}
+.btn-outline-secondary{
+  color:var(--azul-oscuro);
+  border-color:var(--azul-oscuro);
+}
+.btn-outline-secondary:hover{
+  background-color:var(--azul-claro);
+  color:var(--azul-oscuro);
+  border-color:var(--azul-oscuro);
+}
+
+.form-control.campo-invalido,
+.form-select.campo-invalido{
+  border-color:#dc3545 !important;
+  box-shadow:0 0 0 .2rem rgba(220,53,69,.2) !important;
+}
+.pdf-capture-mode .card-footer{
+  display:none !important;
+  
+}
+/*resposive*/
+@media (max-width: 576px) {
+.header img {
+    height: 40px;
+    }
+  .ficha-card {
+    font-size: 0.88rem;
+  }
+  h1.h3 {
+    font-size: 1.15rem;
+  }
+  .form-label {
+    font-size: 0.78rem;
+    margin-bottom: 4px;
+  }
+  .form-control,
+  .form-select {
+    font-size: 0.88rem;
+    padding: 6px 10px;
+  }
+  .row.g-3 {
+    --bs-gutter-y: 10px;
+  }
+  .btn-lg {
+    font-size: 0.95rem;
+    padding: 10px 12px;
+  }
+  .tipo-entidad-group {
+    padding: 8px;
+    gap: 8px;
+    font-size: 0.85rem;
+  }
+  input[type="number"] {
+    padding: 6px;
+  }
+  p{
+    font-size: 0.78rem;
+    margin-bottom: 4px;
+  }
+}
